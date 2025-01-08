@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Habits</h1>
+        <div class="habit-controls">
+            <input type="text" id="newHabitInput" placeholder="New habit name...">
+            <button id="addHabit">Add Habit</button>
+        </div>
+        <div class="habit-list" id="habitList">
+            <!-- Habits will be listed here with delete buttons -->
+        </div>
+        <div class="habit-tracker">
+            <h2 id="currentHabit">Select a habit</h2>
+            <div class="habit-stats">
+                <div class="stat-item">
+                    <span class="stat-value" id="totalDays">0</span>
+                    <span class="stat-label">Total Days</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="currentStreak">0</span>
+                    <span class="stat-label">Current Streak</span>
+                </div>
+            </div>
+            <div class="habit-grid" id="habitGrid"></div>
+            <button id="toggleToday">Toggle Today</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
